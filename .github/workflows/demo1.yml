@@ -4,6 +4,15 @@ on:
     types:
       - opened
       - synchronize
+    branches:
+      - main
+      - 'dev-*'
+      - 'feat/**'
+  push:
+    branches:
+      - main
+      - 'dev-*'
+      - 'feat/**'
   workflow_dispatch:
 jobs:
   deploy:
